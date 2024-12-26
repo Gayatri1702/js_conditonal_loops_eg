@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //if else example
+        let a = 22;
+
+        if (a > 13) {
+            console.log("the entered number is greater than 13");
+        } else if (a = 13) {
+            console.log("the entered number is the same/equal")
+        } else {
+            console.log("the entered number is less than 13");
+        }
+
+
+        //elif example calculator
+        let b = Number(prompt("enter the first number"));
+        let c = Number(prompt("enter the second number"));
+        let operator = prompt("enter the operator");
+
+        if (operator === "+") {
+            output = b + c;
+
+        }
+        else if (operator === "-") {
+            output = b - c;
+        }
+
+        else if (operator === "*") {
+            output = b * c;
+        }
+
+        else if (operator === "/") {
+            output = b / c;
+        }
+
+        else {
+            alert("there is an error" + output);
+        }
+
+        alert("the output is " + output);
+
+        //break and continue example
+        for (let i = 0; i < 5; i++) {
+            if (i === 3) {
+                break;  // Exit the loop when i is 3
+            }
+            console.log(i);
+        }
+
+        for (let i = 0; i < 22; i++) {
+            if (i === 3) {
+                continue;  // Exit the loop when i is 3
+            }
+            console.log(i);
+        }
+
+        //Switch case example
+        // Student Dashboard - Interactive Menu
+
+        let userInput = prompt("Enter a number (1-5):");
+
+        switch (parseInt(userInput)) {
+            case 1:
+                console.log("You selected option 1: View Grades");
+                break;
+            case 2:
+                console.log("You selected option 2: Check Attendance");
+                break;
+            case 3:
+                console.log("You selected option 3: View Assignments");
+                break;
+            case 4:
+                console.log("You selected option 4: Contact Teacher");
+                break;
+            case 5:
+                console.log("You selected option 5: Log Out");
+                break;
+            default:
+                console.log("Invalid option. Please select a number between 1 and 5.");
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
