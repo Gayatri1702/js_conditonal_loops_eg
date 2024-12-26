@@ -88,6 +88,33 @@
                 console.log("Invalid option. Please select a number between 1 and 5.");
         }
 
+        //switch case statement example : Calculator
+          let b = Number(prompt("Enter the first number"));
+        let c = Number(prompt("Enter the second number"));
+        let operator = prompt("Enter the operator (+, -, *, /)");
+
+        let output;
+
+        switch (operator) {
+            case "+":
+                output = b + c;
+                break;
+            case "-":
+                output = b - c;
+                break;
+            case "*":
+                output = b * c;
+                break;
+            case "/":
+                output = b / c;
+                break;
+            default:
+                output = "There is an error: Invalid operator";
+                break;
+        }
+
+        alert("The output is: " + output);
+
 
 
 
